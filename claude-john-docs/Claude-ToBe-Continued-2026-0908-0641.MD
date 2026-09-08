@@ -37,9 +37,10 @@ No game has been chosen and no game code exists yet.
 
 ## Immediate ToDo
 
-- [ ] Confirm the remote session can drive this PC (John's test after
-      restart). If this file is being read from a remote session, that
-      test has at least partly succeeded.
+- [x] DONE 2026-09-08: remote session confirmed working. John sent
+      instructions from another device via the claude.ai session link and
+      Claude responded from WORKY. The full remote loop is now proven end
+      to end (remote instruction -> local edit -> push -> Pages -> iPhone).
 - [ ] John: pick the game. Constraints: simple, touch-based, runs in
       iPhone Safari, plain HTML/CSS/JS, no build step.
 - [ ] Once chosen: add a short design section to `specifications.MD`,
