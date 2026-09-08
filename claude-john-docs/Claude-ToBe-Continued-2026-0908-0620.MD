@@ -35,14 +35,21 @@ The project is a freshly created scaffold. Nothing game-related exists yet.
 
 ## Immediate ToDo
 
-- [ ] John: open the live URL on the iPhone and confirm the placeholder
-      page loads and shows the load time (proves HTML, CSS, and JS all served).
+- [x] John: open the live URL on the iPhone and confirm the placeholder
+      page loads. Done 2026-09-08, works fine.
 - [ ] John: pick the game.
 - [ ] Claude: once the game is chosen, write a short design section in
       `specifications.MD` and build the smallest playable slice.
 
 ## Longer-term ToDo
 
+- Repo name is `Sandbox-cc` with a capital S, which John did not intend.
+  GitHub Pages project URLs are case-sensitive, so the phone URL must be
+  typed with the capital. Fix when convenient: rename the repo to
+  `sandbox-cc` on GitHub (Settings -> Rename); GitHub redirects the old
+  name, and the local remote URL then needs updating with
+  `git remote set-url origin https://github.com/johnpendergrass/sandbox-cc.git`.
+  John said this is fine for now.
 - Web app manifest + icons for a proper home-screen install.
 - Version string in the footer so John can tell which push is live.
 - Decide whether to keep everything at the repo root or move the app into
