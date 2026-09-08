@@ -1,0 +1,42 @@
+/* Sandbox-cc placeholder styles.
+   Keep everything simple and readable; the game will replace this. */
+
+:root {
+  --bg: #1e1e2e;
+  --fg: #e8e8f0;
+  --accent: #7cc7ff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Stop iPhone Safari from bouncing/zooming the page like a document */
+  touch-action: manipulation;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* Respect the notch and home indicator on iPhone */
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+           env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+h1 {
+  color: var(--accent);
+  font-size: 2.5rem;
+  margin-bottom: 0.25em;
+}
+
+#build-info {
+  font-size: 0.85rem;
+  opacity: 0.6;
+}

@@ -1,0 +1,9 @@
+# OS / editor cruft
+Thumbs.db
+.DS_Store
+desktop.ini
+*.swp
+
+# Local-only files
+.env
+node_modules/
