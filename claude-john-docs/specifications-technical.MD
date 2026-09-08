@@ -9,6 +9,8 @@ Last updated: 2026-09-08
 - GitHub Pages: deploys from `main`, root folder (`/`). No Actions workflow,
   no build. A push to `main` is live in roughly 30-90 seconds.
 - Live URL: https://johnpendergrass.github.io/Sandbox-cc/
+- The URL path is case-sensitive. `sandbox-cc` (lowercase) returns 404.
+  A future rename of the repo to lowercase would fix this.
 
 ## Local environment (WORKY PC)
 
@@ -16,9 +18,12 @@ Last updated: 2026-09-08
 - Windows 11, Git 2.53, GitHub CLI (`gh`) 2.94 logged in as johnpendergrass.
   Because `gh` is authenticated, Claude can create repos, push, and change
   Pages settings from the terminal without GitHub Desktop.
-- Claude Code has the Chrome extension available, so it can open the live
-  site in Chrome, resize to an iPhone-like viewport, and take screenshots
-  for John to review remotely.
+- Claude Code has the Claude in Chrome extension available, so it can open
+  the live site in Chrome, take screenshots, and read the page for John to
+  review remotely. Verified 2026-09-08 on eClassical.com and the Pages site.
+  The extension's "Your approved sites" settings page is display-only and
+  does not gate Claude Code's browsing; a refused navigation is usually
+  transient, so retry once before reporting it.
 
 ## Remote working loop
 
