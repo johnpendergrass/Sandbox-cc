@@ -22,11 +22,21 @@ The project is a freshly created scaffold. Nothing game-related exists yet.
    results are pushed to GitHub and tested on iPhone via Pages.
 2. Confirmed Git and `gh` are installed and `gh` is logged in.
 3. Built the scaffold and docs above, created the repo, pushed, enabled Pages.
-4. Tested the Chrome extension by browsing eClassical.com (see session
-   summary for the result).
+4. Tested the Chrome extension by browsing eClassical.com. Result:
+   - Browsing works (home page, Composers page, screenshots all fine).
+   - This Chrome profile is NOT logged in to eClassical; the account icon
+     led to a login form. Claude never enters passwords, so John must log
+     in himself if that is ever needed.
+   - The extension refused to navigate to johnpendergrass.github.io
+     ("Navigation to this domain is not allowed"). John needs to allow
+     that domain (and probably github.com) in the Claude in Chrome
+     extension's site permissions before Claude can screenshot the live
+     site. Verified the site is live via curl instead (HTTP 200).
 
 ## Immediate ToDo
 
+- [ ] John: allow johnpendergrass.github.io and github.com in the Claude in
+      Chrome extension so Claude can screenshot the live site.
 - [ ] John: open the live URL on the iPhone and confirm the placeholder
       page loads and shows the load time (proves HTML, CSS, and JS all served).
 - [ ] John: pick the game.
